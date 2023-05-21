@@ -1,0 +1,83 @@
+:root {
+  --black: #272a31;
+  --orange: #ec5242;
+  --grey: #d3d3d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--grey);
+}
+
+header {
+  background-color: #fff;
+  height: fit-content;
+  padding: 1rem 5vw;
+}
+
+/* ========== Hero Section ========== */
+
+.hero {
+  padding: 4rem 3.5vw;
+  display: grid;
+  gap: 4vw;
+}
+
+.hero h4 {
+  color: var(--orange);
+  font-size: 4vw;
+  font-weight: 300;
+}
+.hero h1 {
+  color: var(--orange);
+  font-size: 8vw;
+  font-weight: 900;
+}
+
+.hero .description {
+  border: 2px solid #fff;
+  padding: 4vw;
+  font-size: 18px;
+}
+
+.hero h3 {
+  font-weight: 800;
+  font-size: 6vw;
+}
+
+.hero .copy {
+  font-size: 20px;
+}
+
+/* ========== End Hero Section ========== */
+
+/* ========== Program Section ========== */
+
+.program {
+  padding: 4rem 4vw;
+  background-color: var(--black);
+  color: #fff;
+  display: grid;
+  gap: 4vw;
+}
+
+.program .content {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+
+.program .content .card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5vw;
+  border-radius: 5px;
+  display: flex;
+  gap: 5%;
+  font-size: 4vw;
+}
+/* ========== End Program Section ========== */
