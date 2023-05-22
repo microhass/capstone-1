@@ -8,10 +8,45 @@
       content="width=device-width, initial-scale=1.0"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer async src="./app.js"></script>
     <title>Capstone Project 1</title>
   </head>
   <body>
-    <header>hamburger</header>
+    <header>
+      <div class="menu-icon">
+        <img
+          src="./images/menu-icon.svg"
+          class="icon"
+          alt="Menu icon"
+        />
+      </div>
+      <div class="logo icon">
+        <img src="./images/cc-logo.png" alt="Logo" />
+      </div>
+      <div class="menu">
+        <div class="logos">
+          <img
+            src="./images/cc-logo-white.png"
+            class="icon"
+            alt="White logo"
+          />
+          <img
+            src="./images/close-icon.svg"
+            class="close-icon icon"
+            alt="Close icon"
+          />
+        </div>
+        <ul class="menu-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Program</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Sponsor</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">CC Campaign</a></li>
+        </ul>
+        <div class="backdrop"></div>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <h4>"Hello! Sharing world"</h4>
@@ -76,22 +111,23 @@
       <!-- Generate using js -->
       <section class="partners">
         <h3 class="title underline">Partner</h3>
-        <img src="./images/partners/mozilla.svg" alt="Mozilla">
-        <img src="./images/partners/google.svg" alt="Google">
-        <img src="./images/partners/naver.svg" alt="Naver">
-        <img src="./images/partners/daumkakao.svg" alt="Daumkakao">
-        <img src="./images/partners/airbnb.svg" alt="Airbnb">
-        
+        <img src="./images/partners/mozilla.svg" alt="Mozilla" />
+        <img src="./images/partners/google.svg" alt="Google" />
+        <img src="./images/partners/naver.svg" alt="Naver" />
+        <img src="./images/partners/daumkakao.svg" alt="Daumkakao" />
+        <img src="./images/partners/airbnb.svg" alt="Airbnb" />
       </section>
       <footer>
-        <div class="logo">Logo</div>
+        <div class="logo">
+          <img src="./images/cc-logo.png" alt="Logo" />
+        </div>
         <div class="copyright">
           <p>2023 Creative Commons China. Some Rights Reserved</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Qui suscipit dolor quam delectus placeat. Error voluptatem
-            harum, dicta culpa consequuntur asperiores, minima cumque,
-            atque sed iste voluptate dolores excepturi nam.
+            除非另有说明，否则网站上的所有内容均根据 Creative Commons
+            Attribution 4.0 China 许可获得许可。
+            有关详细的使用功能和许可条件，请参阅
+            http://creativecommons.org/licences/by/2.0/kr.
           </p>
         </div>
       </footer>
