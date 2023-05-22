@@ -209,12 +209,12 @@ header {
 
 .title.underline::after {
   content: '';
-  width: 50%;
+  width: 20%;
   height: 2px;
   position: absolute;
-  top: 8vw;
+  bottom: -4vw;
   background-color: var(--underline);
-  left: 25%;
+  left: 40%;
 }
 
 .program .content .card {
