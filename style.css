@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 :root {
   --black: #272a31;
   --orange: #ec5242;
+  --program: #ff5438;
+  --button: #ff4f38;
+  --underline: #a04038;
   --grey: #d3d3d3;
 }
 
@@ -8,7 +12,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  transition: all 0.3s ease-in-out;
 }
+
+button {
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
+
+
 
 body {
   background-color: var(--grey);
@@ -72,12 +86,56 @@ header {
   gap: 3vw;
 }
 
+.title {
+  position: relative;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto 2rem auto;
+}
+
+.title.underline::after {
+  content: '';
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  top: 6vw;
+  background-color: var(--underline);
+  left: 25%;
+}
+
 .program .content .card {
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 5vw;
+  padding: 5vw 4vw;
   border-radius: 5px;
   display: flex;
+  align-items: center;
   gap: 5%;
+  font-size: 3vw;
+  line-height: 22px;
+}
+
+.card img {
+  width: 40%;
+}
+
+.card .title {
+  color: var(--program);
   font-size: 4vw;
+  font-weight: 700;
+}
+
+.program .join-btn {
+  background-color: var(--button);
+  width: 85%;
+  padding: 2rem 2rem;
+  color: #fff;
+  font-size: 4vw;
+  align-self: center;
+  margin: 1rem auto 0 auto;
+  border-radius: 8px;
+}
+
+.program .join-btn:hover {
+  border-radius: 0px;
 }
 /* ========== End Program Section ========== */
