@@ -7,11 +7,7 @@ menuIcon.addEventListener('click', () => {
   menu.classList.add('open-menu');
 });
 
-[closeIcon, backdrop].forEach((icon) =>
-  icon.addEventListener('click', () =>
-    menu.classList.remove('open-menu')
-  )
-);
+[closeIcon, backdrop].forEach((icon) => icon.addEventListener('click', () => menu.classList.remove('open-menu')));
 
 // closeIcon.addEventListener('click', () => {
 //   menu.classList.remove('open-menu');

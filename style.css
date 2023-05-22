@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
 :root {
   --black: #272a31;
   --orange: #ec5242;
@@ -79,13 +80,20 @@ header {
   padding: 1rem 5vw;
   font-size: 4.5vw;
   transform: translateX(-100vw);
-  z-index: 3;
 }
 
 .menu .logos {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.more-btn img {
+  width: 3%;
+}
+
+.image img {
+  width: 100%;
 }
 
 .logos img {
@@ -112,6 +120,7 @@ header {
   cursor: pointer;
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.2);
+
   /* border-left: 1px solid #fff; */
 }
 
@@ -150,6 +159,7 @@ header {
   font-size: 4vw;
   font-weight: 300;
 }
+
 .hero h1 {
   color: var(--orange);
   font-size: 8vw;
@@ -240,8 +250,9 @@ header {
 }
 
 .program .join-btn:hover {
-  border-radius: 0px;
+  border-radius: 0;
 }
+
 /* ========== End Program Section ========== */
 
 /* ========== Speakers Section ========== */
@@ -263,10 +274,6 @@ header {
 
 .speakers .card .image {
   width: 70%;
-}
-
-.image img {
-  width: 100%;
 }
 
 .speaker-info {
@@ -303,10 +310,6 @@ header {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.more-btn img {
-  width: 3%;
-}
-
 /* ========== End Speakers Section ========== */
 
 /* ========== Partners Section ========== */
@@ -315,6 +318,7 @@ header {
   color: #fff;
   padding: 4rem 4vw;
 }
+
 /* ========== End Partners Section ========== */
 
 /* ========== Footer Section ========== */
@@ -334,4 +338,5 @@ footer .copyright {
   display: grid;
   gap: 1rem;
 }
+
 /* ========== End Footer Section ========== */
