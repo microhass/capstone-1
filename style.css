@@ -174,11 +174,11 @@ header {
 
 .hero h3 {
   font-weight: 800;
-  font-size: 6vw;
+  font-size: 5.6vw;
 }
 
 .hero .copy {
-  font-size: 20px;
+  font-size: 2.6vw;
 }
 
 /* ========== End Hero Section ========== */
@@ -219,7 +219,7 @@ header {
 
 .program .content .card {
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 5vw 4vw;
+  padding: 5vw 2vw;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -234,8 +234,11 @@ header {
 
 .card .title {
   color: var(--program);
-  font-size: 4vw;
+  font-size: 3.6vw;
   font-weight: 700;
+  width: fit-content;
+  text-align: left;
+  line-height: 30px;
 }
 
 .program .join-btn {
@@ -264,7 +267,7 @@ header {
 .speakers .content {
   padding: 2rem 0;
   display: grid;
-  gap: 10vw;
+  gap: 3vw;
 }
 
 .speakers .content .card {
@@ -272,15 +275,14 @@ header {
   gap: 3vw;
 }
 
-.speakers .card .image {
-  width: 70%;
-}
-
 .speaker-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   line-height: 20px;
+  width: 70%;
+  gap: 2vw;
+  margin-top: 3vw;
 }
 
 .speaker-info .name {
