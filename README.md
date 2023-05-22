@@ -9,7 +9,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Portfolio Project\] ](#-portfolio-project-)
+- [📖 \[Capstone Project 1\] ](#-capstone-project-1-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -29,9 +29,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio Project] <a name="about-project"></a>
+# 📖 [Capstone Project 1] <a name="about-project"></a>
 
-**[Portfolio-project]** is the second project in the microverse fulstack programme. In involves creating a proffessional looking portfolio using HTML and CSS only, from a provided figma design template.
+**[Capstone-Project-1]** is a frontend project done on the fifth week of the Microverse full-stack program. It is developed to showcase the skills students have acquired over the 4 week period of learning involving concepts in HTML, CSS, JavaScript and their related frameworks.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -42,6 +42,7 @@
   <ul>
     <li><a href="#">HTML</a></li>
     <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
     <li><a href="#">Linters</a></li>
   </ul>
 </details>
@@ -50,6 +51,7 @@
 
 - **[HTML]**
 - **[CSS]**
+- **[JavaScript]**
 - **[Linters]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -58,7 +60,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://microhass.github.io/portfolio/)
+- [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,7 +84,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/microhass/portfolio.git
+  git clone https://github.com/microhass/capstone-1.git
 ```
 
 ### Install
