@@ -1,6 +1,6 @@
 const programsContainer = document.querySelector('.program .content');
 const speakersContainer = document.querySelector(
-  '.speakers .content'
+  '.speakers .content',
 );
 
 const programs = [
@@ -44,7 +44,7 @@ const programsMarkup = programs
         <h5 class='title'>${program.name}</h5>
         <p class="summary">${program.summary}</p>
     </div>
-`
+`,
   )
   .join('');
 
@@ -107,8 +107,7 @@ const speakersMarkup = speakers.map(
             <p class="summary">${speaker.summary}</p>
         </div>
     </div>
-`
+`,
 );
 
 speakersContainer.insertAdjacentHTML('beforeend', speakersMarkup);
- 
