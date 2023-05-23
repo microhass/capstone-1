@@ -1,6 +1,6 @@
 const programsContainer = document.querySelector('.program .content');
 const speakersContainer = document.querySelector(
-  '.speakers .content',
+  '.speakers .content'
 );
 
 const programs = [
@@ -44,7 +44,7 @@ const programsMarkup = programs
         <h5 class='title'>${program.name}</h5>
         <p class="summary">${program.summary}</p>
     </div>
-`,
+`
   )
   .join('');
 
@@ -92,8 +92,9 @@ const speakers = [
   },
 ];
 
-const speakersMarkup = speakers.map(
-  (speaker, index) => `
+const speakersMarkup = speakers
+  .map(
+    (speaker, index) => `
     <div class="card" id="${index + 1}">
         <div class="image">
             <img
@@ -108,6 +109,7 @@ const speakersMarkup = speakers.map(
         </div>
     </div>
 `
-);
+  )
+  .join('');
 
 speakersContainer.insertAdjacentHTML('beforeend', speakersMarkup);

@@ -378,11 +378,13 @@ footer .copyright {
   }
 
   .logo {
-    width: 14vw;
+    width: unset;
+    height: 7vw;
   }
 
   .logo img {
-    width: 100%;
+    width: unset;
+    height: 100%;
   }
 
   .menu {
@@ -531,7 +533,286 @@ footer .copyright {
   /* ========== Speakers Section ========== */
   .speakers {
     padding: 4rem 4vw;
-    padding-bottom: 1vw;
+  }
+
+  .speakers .content {
+    padding: 2rem 0;
+    display: grid;
+    gap: 2vw;
+    margin-top: 3rem;
+  }
+
+  .speakers .content .card {
+    display: flex;
+    gap: 2vw;
+  }
+
+  .speakers .content .card:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .speakers .content .card:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .speakers .content .card:nth-of-type(3) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .speakers .content .card:nth-of-type(4) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .speakers .content .card:nth-of-type(5) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .speakers .content .card:nth-of-type(6) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .speaker-info {
+    justify-content: flex-start;
+    width: 70%;
+    gap: 1.5vw;
+    margin-top: 1vw;
+  }
+
+  .speaker-info .name {
+    font-size: 2vw;
+  }
+
+  .speaker-info .position {
+    font-size: 1.6vw;
+  }
+
+  .speaker-info .summary {
+    font-size: 1.5vw;
+  }
+
+  .speakers .more-btn {
+    display: none;
+  }
+
+  /* ========== End Speakers Section ========== */
+
+  /* ========== Partners Section ========== */
+  .partners {
+    padding: 2rem 1vw;
+  }
+
+  .partners .images {
+    padding: 1vw;
+    display: flex;
+    gap: 8vw;
+    margin-top: 2rem;
+  }
+
+  .partners .images > * {
+    width: 100%;
+  }
+
+  /* ========== End Partners Section ========== */
+
+  /* ========== Footer Section ========== */
+  footer {
+    display: flex;
+    gap: 5vw;
+    padding: 2rem 4vw;
+    align-items: center;
+  }
+
+  footer .logo {
+    width: 60%;
+  }
+
+  footer .copyright {
+    font-size: 1.8vw;
+    gap: 1rem;
+  }
+
+  /* ========== End Footer Section ========== */
+}
+
+
+@media (min-width: 1100px) {
+  /* ========== Header Section ========== */
+  header {
+    background-color: #fff;
+    height: fit-content;
+    padding: 0.6rem 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .logo {
+    width: unset;
+    height: 7vw;
+  }
+
+  .logo img {
+    width: unset;
+    height: 100%;
+  }
+
+  .menu {
+    position: unset;
+    background-color: inherit;
+    color: #000;
+    height: fit-content;
+    width: fit-content;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+    gap: 1vw;
+    padding: 1vw;
+    font-size: 1.8vw;
+    transform: translateX(0);
+  }
+
+  .menu .logos {
+    display: none;
+  }
+
+  .more-btn img {
+    width: 3%;
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  .menu .menu-links {
+    display: flex;
+    flex-direction: row;
+    padding: 0vw;
+    gap: 1rem;
+  }
+
+  .menu-links li {
+    padding: 1vw;
+    border: 1px solid transparent;
+  }
+
+  .menu-links li:hover {
+    transform: translate(0);
+  }
+
+  .backdrop {
+    display: none;
+  }
+
+  /* ========== End Header Section ========== */
+
+  /* ========== Hero Section ========== */
+
+  .hero {
+    padding: 4rem 6vw;
+    gap: 6vw;
+    padding-top: 20vw;
+    /* height: 100vh; */
+  }
+
+  .hero h4 {
+    font-size: 3.6vw;
+  }
+
+  .hero h1 {
+    font-size: 6vw;
+    margin-top: -6vw;
+  }
+
+  .hero .description {
+    border: 4px solid #fff;
+    padding: 4vw;
+    font-size: 3vw;
+  }
+
+  .hero h3 {
+    font-weight: 800;
+    font-size: 3.6vw;
+  }
+
+  .hero .copy {
+    font-size: 2.8vw;
+    margin-top: -6vw;
+  }
+
+  /* ========== End Hero Section ========== */
+
+  /* ========== Program Section ========== */
+
+  .program {
+    padding: 4rem 6vw;
+    display: grid;
+    gap: 4vw;
+  }
+
+  .content {
+    flex-direction: row;
+    gap: 1vw;
+  }
+
+  .title {
+    margin: 0 auto 2vw auto;
+    font-size: 3vw;
+  }
+
+  .title.underline::after {
+    bottom: -2vw;
+  }
+
+  .program .content .card {
+    padding: 1vw 1vw;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 1.6vw;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .program .card img {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .card .title {
+    font-size: 2vw;
+    font-weight: 700;
+    width: fit-content;
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .program .join-btn {
+    background-color: transparent;
+    width: fit-content;
+    padding: 0.6rem;
+    font-size: 2vw;
+    margin: 2vw auto 0 auto;
+  }
+
+  .program .join-btn:hover {
+    text-decoration: underline;
+  }
+
+  /* ========== End Program Section ========== */
+
+  /* ========== Speakers Section ========== */
+  .speakers {
+    padding: 4rem 4vw;
   }
 
   .speakers .content {
