@@ -318,7 +318,23 @@ header {
 .partners {
   background: #414246;
   color: #fff;
-  padding: 4rem 4vw;
+  padding: 4rem 1vw;
+}
+
+.partners .images {
+  padding: 1vw;
+  width: 100%;
+  display: grid;
+  gap: 8vw;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners .images > * {
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* ========== End Partners Section ========== */
