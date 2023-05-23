@@ -94,7 +94,7 @@ const speakers = [
 
 const speakersMarkup = speakers.map(
   (speaker, index) => `
-    <div class="card">
+    <div class="card" id="${index + 1}">
         <div class="image">
             <img
             src="./images/speakers/speaker-${index + 1}.svg"
@@ -107,7 +107,7 @@ const speakersMarkup = speakers.map(
             <p class="summary">${speaker.summary}</p>
         </div>
     </div>
-`,
+`
 );
 
 speakersContainer.insertAdjacentHTML('beforeend', speakersMarkup);
