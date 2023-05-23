@@ -151,7 +151,7 @@ If you like this project give it a github star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the opportunity and support.
+I would like to thank Microverse for the opportunity and support. I would also like to acknowledge and give credit to the original designer of the project [Cindy Shin on Behance](https://www.behance.net/adagio07)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

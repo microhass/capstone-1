@@ -41,7 +41,7 @@ const programsMarkup = programs
     (program) => `
     <div class='card' id="program">
         <img src='${program.icon}' alt='${program.name}' />
-        <h5 class='title'>${program.name}</h5>
+        <h5 class='prog-title'>${program.name}</h5>
         <p class="summary">${program.summary}</p>
     </div>
 `,

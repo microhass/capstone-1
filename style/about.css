@@ -84,6 +84,19 @@
   font-weight: 700;
 }
 
+.partners {
+  display: block;
+}
+
+footer {
+  display: flex;
+  background-color: #fff;
+}
+
+footer #white-logo {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .hero.about {
     width: 100vw;
@@ -155,6 +168,19 @@
 
   .text h5 {
     font-size: 4vw;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  footer {
+    background-color: #272a31;
+    color: #fff;
+  }
+
+  footer #black-logo {
+    display: none;
   }
 }
 

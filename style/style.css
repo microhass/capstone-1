@@ -121,8 +121,6 @@ header {
   cursor: pointer;
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-
-  /* border-left: 1px solid #fff; */
 }
 
 .menu-links li:last-of-type {
@@ -181,11 +179,13 @@ header {
 }
 
 .hero h3 {
-  font-weight: 800;
+  font-weight: 900;
   font-size: 5.6vw;
+  color: #787878;
 }
 
 .hero .copy {
+  color: #787878;
   font-size: 2.6vw;
 }
 
@@ -240,13 +240,13 @@ header {
   width: 40%;
 }
 
-.card .title {
+.card .prog-title {
   color: var(--program);
   font-size: 3.6vw;
   font-weight: 700;
   width: fit-content;
   text-align: left;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .program .join-btn {
@@ -311,9 +311,10 @@ header {
 
 /* ========== Partners Section ========== */
 .partners {
-  background: #414246;
+  background: var(--black);
   color: #fff;
   padding: 4rem 1vw;
+  display: none;
 }
 
 .partners .images {
@@ -336,10 +337,10 @@ header {
 
 /* ========== Footer Section ========== */
 footer {
-  display: flex;
   gap: 5vw;
   padding: 2rem 4vw;
   align-items: center;
+  display: none;
 }
 
 footer .logo {
@@ -519,7 +520,7 @@ footer .copyright {
     height: 7vw;
   }
 
-  .card .title {
+  .card .prog-title {
     font-size: 2vw;
     font-weight: 700;
     width: fit-content;
@@ -611,6 +612,7 @@ footer .copyright {
 
   /* ========== Partners Section ========== */
   .partners {
+    display: block;
     padding: 2rem 1vw;
   }
 
@@ -631,8 +633,9 @@ footer .copyright {
   footer {
     display: flex;
     gap: 5vw;
-    padding: 2rem 4vw;
+    padding: 6vw 4vw;
     align-items: center;
+    margin-top: 5vw;
   }
 
   footer .logo {
@@ -746,7 +749,7 @@ footer .copyright {
     height: 4vw;
   }
 
-  .card .title {
+  .card .prog-title {
     font-size: 1.2vw;
     line-height: unset;
   }
@@ -811,7 +814,8 @@ footer .copyright {
   /* ========== Footer Section ========== */
   footer {
     gap: 3vw;
-    padding: 2rem 20vw;
+    padding: 3vw 20vw;
+    margin-top: 5vw;
   }
 
   footer .logo {
