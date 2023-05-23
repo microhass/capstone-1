@@ -39,9 +39,9 @@ const programs = [
 const programsMarkup = programs
   .map(
     (program) => `
-    <div class='card'>
+    <div class='card' id="program">
         <img src='${program.icon}' alt='${program.name}' />
-        <h5 class='title'>${program.name}</h5>
+        <h5 class='prog-title'>${program.name}</h5>
         <p class="summary">${program.summary}</p>
     </div>
 `,
@@ -92,8 +92,9 @@ const speakers = [
   },
 ];
 
-const speakersMarkup = speakers.map(
-  (speaker, index) => `
+const speakersMarkup = speakers
+  .map(
+    (speaker, index) => `
     <div class="card">
         <div class="image">
             <img
@@ -108,6 +109,7 @@ const speakersMarkup = speakers.map(
         </div>
     </div>
 `,
-);
+  )
+  .join('');
 
 speakersContainer.insertAdjacentHTML('beforeend', speakersMarkup);

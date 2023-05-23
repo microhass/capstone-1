@@ -11,10 +11,25 @@
     <link rel="stylesheet" href="./style/about.css" />
     <script defer async src="./app.js"></script>
 
-    <title>Capstone Project 1</title>
+    <title>Tech CompScie Creatives | About</title>
   </head>
   <body>
     <header>
+      <ul class="actions">
+        <li>
+          <a href="https://www.facebook.com/HassShakur"
+            ><img src="./images/fb.svg" alt="Facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com/HassShakur"
+            ><img src="./images/twitter.svg" alt="twitter"
+          /></a>
+        </li>
+        <li><a href="#">English</a></li>
+        <li><a href="#">Home Page</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
       <div class="menu-icon">
         <img
           src="./images/menu-icon.svg"
@@ -43,28 +58,34 @@
         <ul class="menu-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#">Program</a></li>
-          <li><a href="#">Join</a></li>
-          <li><a href="#">Sponsor</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">CC Campaign</a></li>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#join">Join</a></li>
+          <li><a href="#partners">Sponsor</a></li>
+          <li><a href="#history">News</a></li>
+          <li><a href="#campaign">CC Campaign</a></li>
         </ul>
         <div class="backdrop"></div>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero about">
         <h4>"Hello! Sharing world"</h4>
-        <h1>CREATIVE COMMONS GLOBAL SUMMIT 2023</h1>
-      </section>
-
-      <section class="about-content">
+        <h1>COMPSCIE CREATIVES GLOBAL SUMMIT 2023</h1>
         <p class="about-text">
           The Global Summit brings together the community of experts,
-          academics, and activists who comprise the Creative Commons
+          academics, and activists who comprise the CompScie Creatives
           affiliate network in a different country every two years.
+          <br />
           This year, we hope to expand our invitation list including
-          organizations and individuals.
+          organizations and individuals who want to work with us on
+          shared projects that advance the cause of the Commons, free
+          culture and open knowledge. <br />
+          So if you're active and engaged in the worlds of open
+          content and knowledge - free software advocates,
+          wikipedians, Open knowledge, galleries, libraries, museums,
+          archives, governments and foundations, lawyers, and
+          activists - we hope you'll consider joining us this year to
+          build a stronger, more vibrant commons together
         </p>
         <div class="contact">
           <p>
@@ -73,18 +94,24 @@
           </p>
           <p class="website">ccsummit2023@ccchina.org</p>
         </div>
+      </section>
+
+      <section class="about-content">
         <div class="about-logo">
           <h4 class="title underline">
-            Creative Commons <br />
-            Global Summit 2015 Logo
+            CompScie Creatives Global Summit 2015 Logo
           </h4>
           <p>
             The logo of CC Global Summit 2023 was decided through the
-            logo competition from 8, March to 7, April.
+            logo competition from 8, March to 7, April. After online
+            public voting and Selection Committee’s judging process,
+            the logo from Naresh Agrawal won the prize. After
+            consultation with Mr. Agrawal, we optimized the
+            prize-winning-logo for this year’s summit as follows:
           </p>
           <img src="./images/cc-logo.png" alt="Logo" />
         </div>
-        <div class="history">
+        <div class="history" id="history">
           <h4 class="title underline">
             See the past CC Global Summits
           </h4>
@@ -117,7 +144,7 @@
         </div>
       </section>
 
-      <section class="partners">
+      <section class="partners" id="partners">
         <h3 class="title underline">Partner</h3>
         <div class="images">
           <img src="./images/partners/mozilla.svg" alt="Mozilla" />
@@ -132,13 +159,14 @@
       </section>
       <footer>
         <div class="logo">
-          <img src="./images/cc-logo.png" alt="Logo" />
+          <img id="black-logo" src="./images/cc-logo.png" alt="Logo" />
+          <img id="white-logo" src="./images/cc-logo-white.png" alt="Logo" />
         </div>
         <div class="copyright">
-          <p>2023 Creative Commons China. Some Rights Reserved</p>
+          <p>2023 CompScie Creatives China. Some Rights Reserved</p>
           <p>
-            除非另有说明，否则网站上的所有内容均根据 Creative Commons
-            Attribution 4.0 China 许可获得许可。
+            除非另有说明，否则网站上的所有内容均根据 CompScie
+            Creatives Attribution 4.0 China 许可获得许可。
             有关详细的使用功能和许可条件，请参阅
             http://creativecommons.org/licences/by/2.0/kr.
           </p>

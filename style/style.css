@@ -55,6 +55,11 @@ header {
   position: fixed;
   width: 100%;
   z-index: 5;
+  box-shadow: -1px 6px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.actions {
+  display: none;
 }
 
 .logo {
@@ -88,10 +93,6 @@ header {
   align-items: center;
 }
 
-.more-btn img {
-  width: 3%;
-}
-
 .image img {
   width: 100%;
 }
@@ -120,8 +121,11 @@ header {
   cursor: pointer;
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-  /* border-left: 1px solid #fff; */
+.menu-links li:last-of-type {
+  border: 2px solid var(--button);
+  color: var(--button);
 }
 
 .menu-links li:hover {
@@ -152,6 +156,8 @@ header {
   display: grid;
   gap: 4vw;
   padding-top: 6rem;
+  background: url(./../images/background.png) no-repeat top left;
+  background-size: cover;
 }
 
 .hero h4 {
@@ -173,11 +179,13 @@ header {
 }
 
 .hero h3 {
-  font-weight: 800;
+  font-weight: 900;
   font-size: 5.6vw;
+  color: #787878;
 }
 
 .hero .copy {
+  color: #787878;
   font-size: 2.6vw;
 }
 
@@ -223,7 +231,7 @@ header {
   border-radius: 5px;
   display: flex;
   align-items: center;
-  gap: 5%;
+  gap: 4vw;
   font-size: 3vw;
   line-height: 22px;
 }
@@ -232,13 +240,13 @@ header {
   width: 40%;
 }
 
-.card .title {
+.card .prog-title {
   color: var(--program);
   font-size: 3.6vw;
   font-weight: 700;
   width: fit-content;
   text-align: left;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .program .join-btn {
@@ -299,26 +307,14 @@ header {
   font-size: 2.4vw;
 }
 
-.speakers .more-btn {
-  border: 1px solid #aaa;
-  width: 100%;
-  padding: 1rem 2rem;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-
 /* ========== End Speakers Section ========== */
 
 /* ========== Partners Section ========== */
 .partners {
-  background: #414246;
+  background: var(--black);
   color: #fff;
   padding: 4rem 1vw;
+  display: none;
 }
 
 .partners .images {
@@ -341,10 +337,10 @@ header {
 
 /* ========== Footer Section ========== */
 footer {
-  display: flex;
   gap: 5vw;
   padding: 2rem 4vw;
   align-items: center;
+  display: none;
 }
 
 footer .logo {
@@ -358,3 +354,478 @@ footer .copyright {
 }
 
 /* ========== End Footer Section ========== */
+
+@media (min-width: 768px) {
+  /* ========== Header Section ========== */
+  header {
+    background-color: #fff;
+    height: fit-content;
+    padding: 1rem 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 1.5rem;
+  }
+
+  .actions {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--black);
+    color: #fff;
+    top: -1.5rem;
+    left: 0;
+    width: 100vw;
+    height: fit-content;
+    font-size: 15px;
+    padding: 5px 4vw;
+    z-index: 6;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .logo {
+    width: unset;
+    height: 7vw;
+  }
+
+  .logo img {
+    width: unset;
+    height: 100%;
+  }
+
+  .menu {
+    position: unset;
+    background-color: inherit;
+    color: #000;
+    height: fit-content;
+    width: fit-content;
+    flex-direction: row;
+
+    /* justify-content: flex-end; */
+    gap: 1vw;
+    padding: 1vw;
+    font-size: 1.8vw;
+    transform: translateX(0);
+  }
+
+  .menu .logos {
+    display: none;
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  .menu .menu-links {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 1rem;
+  }
+
+  .menu-links li {
+    padding: 1vw;
+    border: 1px solid transparent;
+  }
+
+  .menu-links li:hover {
+    transform: translate(0);
+  }
+
+  .backdrop {
+    display: none;
+  }
+
+  /* ========== End Header Section ========== */
+
+  /* ========== Hero Section ========== */
+
+  .hero {
+    padding: 4rem 6vw;
+    gap: 6vw;
+    padding-top: 20vw;
+
+    /* height: 100vh; */
+  }
+
+  .hero h4 {
+    font-size: 3.6vw;
+  }
+
+  .hero h1 {
+    font-size: 6vw;
+    margin-top: -6vw;
+  }
+
+  .hero .description {
+    border: 4px solid #fff;
+    padding: 4vw;
+    font-size: 3vw;
+  }
+
+  .hero h3 {
+    font-weight: 800;
+    font-size: 3.6vw;
+  }
+
+  .hero .copy {
+    font-size: 2.8vw;
+    margin-top: -6vw;
+  }
+
+  /* ========== End Hero Section ========== */
+
+  /* ========== Program Section ========== */
+
+  .program {
+    padding: 4rem 6vw;
+    display: grid;
+    gap: 4vw;
+  }
+
+  .content {
+    flex-direction: row;
+    gap: 1vw;
+  }
+
+  .title {
+    margin: 0 auto 2vw auto;
+    font-size: 3vw;
+  }
+
+  .title.underline::after {
+    bottom: -2vw;
+  }
+
+  .program .content .card {
+    padding: 1vw 1vw;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 1.6vw;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .program .card img {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .card .prog-title {
+    font-size: 2vw;
+    font-weight: 700;
+    width: fit-content;
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .program .join-btn {
+    background-color: transparent;
+    width: fit-content;
+    padding: 0.6rem;
+    font-size: 2vw;
+    margin: 2vw auto 0 auto;
+  }
+
+  .program .join-btn:hover {
+    text-decoration: underline;
+  }
+
+  /* ========== End Program Section ========== */
+
+  /* ========== Speakers Section ========== */
+  .speakers {
+    padding: 4rem 4vw;
+  }
+
+  .speakers .content {
+    padding: 2rem 0;
+    display: grid;
+    gap: 2vw;
+    margin-top: 3rem;
+  }
+
+  .speakers .content .card {
+    display: flex;
+    gap: 2vw;
+  }
+
+  .speakers .content .card:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .speakers .content .card:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .speakers .content .card:nth-of-type(3) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .speakers .content .card:nth-of-type(4) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .speakers .content .card:nth-of-type(5) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .speakers .content .card:nth-of-type(6) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .speaker-info {
+    justify-content: flex-start;
+    width: 70%;
+    gap: 1.5vw;
+    margin-top: 1vw;
+  }
+
+  .speaker-info .name {
+    font-size: 2vw;
+  }
+
+  .speaker-info .position {
+    font-size: 1.6vw;
+  }
+
+  .speaker-info .summary {
+    font-size: 1.5vw;
+  }
+
+  /* ========== End Speakers Section ========== */
+
+  /* ========== Partners Section ========== */
+  .partners {
+    display: block;
+    padding: 2rem 1vw;
+  }
+
+  .partners .images {
+    padding: 1vw;
+    display: flex;
+    gap: 8vw;
+    margin-top: 2rem;
+  }
+
+  .partners .images > * {
+    width: 100%;
+  }
+
+  /* ========== End Partners Section ========== */
+
+  /* ========== Footer Section ========== */
+  footer {
+    display: flex;
+    gap: 5vw;
+    padding: 6vw 4vw;
+    align-items: center;
+    margin-top: 5vw;
+  }
+
+  footer .logo {
+    width: 60%;
+  }
+
+  footer .copyright {
+    font-size: 1.8vw;
+    gap: 1rem;
+  }
+
+  /* ========== End Footer Section ========== */
+}
+
+@media (min-width: 1100px) {
+  /* ========== Header Section ========== */
+  header {
+    padding: 0 14vw;
+  }
+
+  .actions {
+    font-size: 15px;
+    padding: 5px 15vw;
+  }
+
+  .logo {
+    height: 4vw;
+  }
+
+  .menu {
+    gap: 1vw;
+    padding: 1vw;
+    font-size: 0.9vw;
+  }
+
+  .menu .menu-links {
+    padding: 0;
+    gap: 1rem;
+  }
+
+  .menu-links li {
+    padding: 0.5vw 1vw;
+  }
+
+  /* ========== End Header Section ========== */
+
+  /* ========== Hero Section ========== */
+
+  .hero {
+    padding: 4rem 14vw;
+    gap: 4vw;
+    padding-top: 9rem;
+  }
+
+  .hero h4 {
+    font-size: 1.8vw;
+  }
+
+  .hero h1 {
+    font-size: 4.4vw;
+    margin-top: -3vw;
+  }
+
+  .hero .description {
+    width: 65%;
+    padding: 1.5vw;
+    font-size: 1.2vw;
+  }
+
+  .hero h3 {
+    font-size: 2.4vw;
+  }
+
+  .hero .copy {
+    font-size: 1.1vw;
+    font-weight: 400;
+    margin-top: -3vw;
+  }
+
+  /* ========== End Hero Section ========== */
+
+  /* ========== Program Section ========== */
+
+  .program {
+    padding: 4rem 14vw;
+    gap: 4vw;
+  }
+
+  .content {
+    gap: 0.5vw;
+  }
+
+  .title {
+    margin: 1vw auto;
+    font-size: 1.8vw;
+  }
+
+  .title.underline::after {
+    bottom: -1vw;
+  }
+
+  .program .content .card {
+    padding: 0.8vw 0.6vw;
+    gap: 0;
+    font-size: 1vw;
+    line-height: 1.8vw;
+  }
+
+  .program .card img {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .card .prog-title {
+    font-size: 1.2vw;
+    line-height: unset;
+  }
+
+  .program .join-btn {
+    padding: 0.6rem;
+    font-size: 1vw;
+    line-height: 2vw;
+  }
+
+  /* ========== End Program Section ========== */
+
+  /* ========== Speakers Section ========== */
+  .speakers {
+    padding: 4rem 16vw;
+  }
+
+  .speakers .content {
+    padding: 2rem 0;
+    gap: 2vw;
+    margin-top: 3rem;
+  }
+
+  .speakers .content .card {
+    gap: 1vw;
+  }
+
+  .speaker-info {
+    width: 70%;
+    gap: 0.7vw;
+    margin-top: 1vw;
+    line-height: 1.2vw;
+  }
+
+  .speaker-info .name {
+    font-size: 1.4vw;
+  }
+
+  .speaker-info .position {
+    font-size: 0.9vw;
+  }
+
+  .speaker-info .summary {
+    font-size: 0.8vw;
+  }
+
+  /* ========== End Speakers Section ========== */
+
+  /* ========== Partners Section ========== */
+  .partners {
+    padding: 2rem 14vw;
+  }
+
+  .partners .images {
+    padding: 1vw;
+    gap: 4vw;
+    margin-top: 2rem;
+  }
+
+  /* ========== End Partners Section ========== */
+
+  /* ========== Footer Section ========== */
+  footer {
+    gap: 3vw;
+    padding: 3vw 20vw;
+    margin-top: 5vw;
+  }
+
+  footer .logo {
+    width: 50%;
+  }
+
+  footer .copyright {
+    font-size: 0.8vw;
+    gap: 1rem;
+  }
+
+  /* ========== End Footer Section ========== */
+}

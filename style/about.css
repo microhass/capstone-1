@@ -1,3 +1,7 @@
+.hero.about {
+  text-align: center;
+}
+
 .about-content {
   display: grid;
   gap: 4vw;
@@ -78,4 +82,176 @@
 .text h5 {
   font-size: 8vw;
   font-weight: 700;
+}
+
+.partners {
+  display: block;
+}
+
+footer {
+  display: flex;
+  background-color: #fff;
+}
+
+footer #white-logo {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hero.about {
+    width: 100vw;
+    margin: 0 auto;
+    padding-top: 26vw;
+  }
+
+  .about-logo h4 {
+    font-size: 3vw;
+  }
+
+  .hero.about h4 {
+    display: none;
+  }
+
+  .about-content {
+    display: grid;
+    gap: 4vw;
+    text-align: center;
+  }
+
+  .about-text {
+    background-color: #fff;
+    padding: 2rem 5vw;
+    font-size: 1.8vw;
+    width: 86%;
+    margin: 0 auto;
+  }
+
+  .contact .website {
+    text-decoration: underline;
+  }
+
+  .about-logo {
+    padding: 2rem 5vw;
+    display: grid;
+    gap: 4vw;
+  }
+
+  .about-logo p {
+    font-size: 2.4vw;
+  }
+
+  .about-logo img {
+    width: 50vw;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+  }
+
+  .history {
+    padding: 2rem 5vw;
+  }
+
+  .summits {
+    flex-direction: row;
+    gap: 4vw;
+    margin-top: 3vw;
+  }
+
+  .first,
+  .second {
+    position: relative;
+  }
+
+  .summits .text {
+    font-size: 2vw;
+    gap: 1rem;
+  }
+
+  .text h5 {
+    font-size: 4vw;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  footer {
+    background-color: #272a31;
+    color: #fff;
+  }
+
+  footer #black-logo {
+    display: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  .hero.about {
+    margin: 0 auto;
+    padding-top: 8vw;
+    background: none;
+  }
+
+  .hero.about h1 {
+    width: 55%;
+    margin: 0 auto;
+    font-size: 3vw;
+  }
+
+  .about-content {
+    display: grid;
+    gap: 1vw;
+    text-align: center;
+  }
+
+  .about-text {
+    padding: 4rem 3vw;
+    font-size: 0.9vw;
+    width: 86%;
+    margin: 0 auto;
+    line-height: 1.8vw;
+  }
+
+  .contact .website {
+    text-decoration: underline;
+  }
+
+  .about-logo {
+    padding: 2rem 14vw;
+    gap: 3vw;
+  }
+
+  .about-logo h4 {
+    font-size: 1.8vw;
+  }
+
+  .about-logo p {
+    font-size: 0.9vw;
+    padding: 0.5vw 10vw;
+    line-height: 1.8vw;
+  }
+
+  .about-logo img {
+    width: 20vw;
+  }
+
+  .history {
+    padding: 2vw 15vw;
+    gap: 2vw;
+  }
+
+  .summits {
+    flex-direction: row;
+    gap: 1vw;
+    margin-top: 1vw;
+    padding: 0 10vw;
+  }
+
+  .summits .text {
+    font-size: 0.7vw;
+    gap: 1rem;
+  }
+
+  .text h5 {
+    font-size: 1.8vw;
+  }
 }
