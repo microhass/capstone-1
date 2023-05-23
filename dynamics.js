@@ -1,6 +1,6 @@
 const programsContainer = document.querySelector('.program .content');
 const speakersContainer = document.querySelector(
-  '.speakers .content'
+  '.speakers .content',
 );
 
 const programs = [
@@ -39,12 +39,12 @@ const programs = [
 const programsMarkup = programs
   .map(
     (program) => `
-    <div class='card'>
+    <div class='card' id="program">
         <img src='${program.icon}' alt='${program.name}' />
         <h5 class='title'>${program.name}</h5>
         <p class="summary">${program.summary}</p>
     </div>
-`
+`,
   )
   .join('');
 
@@ -95,7 +95,7 @@ const speakers = [
 const speakersMarkup = speakers
   .map(
     (speaker, index) => `
-    <div class="card" id="${index + 1}">
+    <div class="card">
         <div class="image">
             <img
             src="./images/speakers/speaker-${index + 1}.svg"
@@ -108,7 +108,7 @@ const speakersMarkup = speakers
             <p class="summary">${speaker.summary}</p>
         </div>
     </div>
-`
+`,
   )
   .join('');
 

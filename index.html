@@ -14,6 +14,19 @@
   </head>
   <body>
     <header>
+      <ul class="actions">
+        <li>
+          <a href="#"><img src="./images/fb.svg" alt="Facebook" /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./images/twitter.svg" alt="twitter"
+          /></a>
+        </li>
+        <li><a href="#">English</a></li>
+        <li><a href="#">My Page</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
       <div class="menu-icon">
         <img
           src="./images/menu-icon.svg"
@@ -42,9 +55,9 @@
         <ul class="menu-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#">Program</a></li>
-          <li><a href="#">Join</a></li>
-          <li><a href="#">Sponsor</a></li>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#join">Join</a></li>
+          <li><a href="#partners">Sponsor</a></li>
           <li><a href="#">News</a></li>
           <li><a href="#">CC Campaign</a></li>
         </ul>
@@ -69,7 +82,7 @@
       <section class="program">
         <h3 class="title underline">Main Program</h3>
         <div class="content"></div>
-        <button type="button" class="btn join-btn">
+        <button id="join" type="button" class="btn join-btn">
           Join CC Global Summit 2023
         </button>
       </section>
@@ -77,13 +90,9 @@
       <section class="speakers">
         <h3 class="title underline">Featured Speakers</h3>
         <div class="content"></div>
-        <button type="button" class="more-btn">
-          <span>More</span>
-          <img src="./images/speakers/arrow.svg" alt="arrow" />
-        </button>
       </section>
       <!-- Generate using js -->
-      <section class="partners">
+      <section class="partners" id="partners">
         <h3 class="title underline">Partner</h3>
         <div class="images">
           <img src="./images/partners/mozilla.svg" alt="Mozilla" />

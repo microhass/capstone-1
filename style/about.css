@@ -91,6 +91,10 @@
     padding-top: 26vw;
   }
 
+  .about-logo h4 {
+    font-size: 3vw;
+  }
+
   .hero.about h4 {
     display: none;
   }
@@ -117,10 +121,6 @@
     padding: 2rem 5vw;
     display: grid;
     gap: 4vw;
-  }
-
-  .about-logo h4 {
-    font-size: 3vw;
   }
 
   .about-logo p {
