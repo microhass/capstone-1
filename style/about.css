@@ -1,3 +1,7 @@
+.hero.about {
+  text-align: center;
+}
+
 .about-content {
   display: grid;
   gap: 4vw;
@@ -80,88 +84,76 @@
   font-weight: 700;
 }
 
+@media (min-width: 768px) {
+  .hero.about {
+    width: 86vw;
+    margin: 0 auto;
+    padding-top: 26vw;
+  }
 
-@media (min-width:768px) {
+  .hero.about h4 {
+    display: none;
+  }
+
   .about-content {
-  display: grid;
-  gap: 4vw;
-  text-align: center;
-}
+    display: grid;
+    gap: 4vw;
+    text-align: center;
+  }
 
-.about-text {
-  background-color: #fff;
-  padding: 2rem 5vw;
-  line-height: 26px;
-}
+  .about-text {
+    background-color: #fff;
+    padding: 2rem 5vw;
+    font-size: 1.8vw;
+    width: 86%;
+    margin: 0 auto;
+  }
 
-.contact {
-  padding: 2rem 5vw;
-  line-height: 30px;
-}
+  .contact .website {
+    text-decoration: underline;
+  }
 
-.contact .website {
-  text-decoration: underline;
-  cursor: pointer;
-  font-weight: 600;
-}
+  .about-logo {
+    padding: 2rem 5vw;
+    display: grid;
+    gap: 4vw;
+  }
 
-.about-logo {
-  padding: 2rem 5vw;
-  background-color: #fff;
-  display: grid;
-  gap: 4vw;
-}
+  .about-logo h4 {
+    font-size: 3vw;
+  }
 
-.about-logo p {
-  font-size: 3.5vw;
-}
+  .about-logo p {
+    font-size: 2.4vw;
+  }
 
-.about-logo img {
-  width: 90vw;
-}
+  .about-logo img {
+    width: 50vw;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+  }
 
-.history {
-  padding: 2rem 5vw;
-  display: grid;
-  gap: 4vw;
-}
+  .history {
+    padding: 2rem 5vw;
+  }
 
-.summits {
-  display: flex;
-  flex-direction: column;
-  gap: 8vw;
-  margin-top: 5vw;
-}
+  .summits {
+    flex-direction: row;
+    gap: 4vw;
+    margin-top: 3vw;
+  }
 
-.first,
-.second {
-  position: relative;
-}
+  .first,
+  .second {
+    position: relative;
+  }
 
-.summits img {
-  width: 100%;
-}
+  .summits .text {
+    font-size: 2vw;
+    gap: 1rem;
+  }
 
-.summits .text {
-  background-color: rgba(255, 0, 0, 0.4);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 99%;
-  z-index: 2;
-  color: #fff;
-  font-size: 3.5vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.text h5 {
-  font-size: 8vw;
-  font-weight: 700;
-}
-
+  .text h5 {
+    font-size: 4vw;
+  }
 }
