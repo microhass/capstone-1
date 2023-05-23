@@ -157,3 +157,78 @@
     font-size: 4vw;
   }
 }
+
+
+@media (min-width: 1100px) {
+  .hero.about {
+    width: 86vw;
+    margin: 0 auto;
+    padding-top: 26vw;
+  }
+
+  .hero.about h4 {
+    display: none;
+  }
+
+  .about-content {
+    display: grid;
+    gap: 4vw;
+    text-align: center;
+  }
+
+  .about-text {
+    background-color: #fff;
+    padding: 2rem 5vw;
+    font-size: 1.8vw;
+    width: 86%;
+    margin: 0 auto;
+  }
+
+  .contact .website {
+    text-decoration: underline;
+  }
+
+  .about-logo {
+    padding: 2rem 5vw;
+    display: grid;
+    gap: 4vw;
+  }
+
+  .about-logo h4 {
+    font-size: 3vw;
+  }
+
+  .about-logo p {
+    font-size: 2.4vw;
+  }
+
+  .about-logo img {
+    width: 50vw;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+  }
+
+  .history {
+    padding: 2rem 5vw;
+  }
+
+  .summits {
+    flex-direction: row;
+    gap: 4vw;
+    margin-top: 3vw;
+  }
+
+  .first,
+  .second {
+    position: relative;
+  }
+
+  .summits .text {
+    font-size: 2vw;
+    gap: 1rem;
+  }
+
+  .text h5 {
+    font-size: 4vw;
+  }
+}
